@@ -26,6 +26,21 @@
 WIDGET = {FID: 'Zl7NKTbb1w'}
 </script>
 <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+<div id="tp-weather-widget"></div>
+<script>
+  (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+  window.SeniverseWeatherWidget('show', {
+    flavor: "bubble",
+    location: "WX4FBXXFKE4F",
+    geolocation: true,
+    language: "zh-Hans",
+    unit: "c",
+    theme: "auto",
+    token: "49a6fcc4-5fa5-4012-b1c9-18896714a6c7",
+    hover: "enabled",
+    container: "tp-weather-widget"
+  })
+</script>
   <meta name="description" content="Shall not God search this out? for he knoweth the secrets of the heart.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="NAZCA">
@@ -244,11 +259,7 @@ WIDGET = {FID: 'Zl7NKTbb1w'}
           站点概览
         </li>
       </ul>
-<div id="music163player">
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 
-    src="//music.163.com/outchain/player?type=2&id=1394112877&auto=1&height=66">
-    </iframe>
-</div>
+
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
       </div>
@@ -276,6 +287,11 @@ WIDGET = {FID: 'Zl7NKTbb1w'}
 
 
       </div>
+<div id="music163player">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 
+    src="//music.163.com/outchain/player?type=2&id=1394112877&auto=1&height=66">
+    </iframe>
+</div>
 
     </div>
   </aside>
