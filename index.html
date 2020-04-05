@@ -174,7 +174,7 @@ WIDGET = {FID: 'Zl7NKTbb1w'}
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/28/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/05/HDB3%E7%BC%96%E7%A0%81/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/222222222222.gif">
@@ -188,7 +188,7 @@ WIDGET = {FID: 'Zl7NKTbb1w'}
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/03/28/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2020/04/05/HDB3%E7%BC%96%E7%A0%81/" class="post-title-link" itemprop="url">HDB3编码</a>
         </h2>
 
         <div class="post-meta">
@@ -197,8 +197,9 @@ WIDGET = {FID: 'Zl7NKTbb1w'}
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-03-28 18:58:52" itemprop="dateCreated datePublished" datetime="2020-03-28T18:58:52+08:00">2020-03-28</time>
+              <time title="创建时间：2020-04-05 16:55:27 / 修改时间：17:00:18" itemprop="dateCreated datePublished" datetime="2020-04-05T16:55:27+08:00">2020-04-05</time>
             </span>
 
           
@@ -212,19 +213,9 @@ WIDGET = {FID: 'Zl7NKTbb1w'}
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+          <h1 id="HDB3—3阶高密度双极性码"><a href="#HDB3—3阶高密度双极性码" class="headerlink" title="HDB3—3阶高密度双极性码"></a>HDB3—3阶高密度双极性码</h1><h2 id="1-AMI变换-将消息码变换成AMI码"><a href="#1-AMI变换-将消息码变换成AMI码" class="headerlink" title="1.AMI变换.将消息码变换成AMI码."></a>1.AMI变换.将消息码变换成AMI码.</h2><h2 id="2-加V-检查AMI码中连0的情况："><a href="#2-加V-检查AMI码中连0的情况：" class="headerlink" title="2.加V.检查AMI码中连0的情况："></a>2.加V.检查AMI码中连0的情况：</h2><p>·当没有发现4个以上（包括4个）连0时，则不作改变，AMI码就是HDB3码.</p>
+<p>·当发现4个或4个以上连0的码元串时，就将第4个0变成与前一个非0码元（“+1”或“-1”）同极性的码元.<br>·将这个码元成为“破坏码元”，并用符号“V”表示，即用“+V”表示“+1”，用“-V”表示“-1”.<br>  1000  0 1  1  1000 0  1<br>+1000  0-1+1-1000 0+1<br>+1000+V-1+1-1000-V+1</p>
+<h2 id="3-加B"><a href="#3-加B" class="headerlink" title="3.加B."></a>3.加B.</h2><p>·当相邻V之间有偶数个非0码元时，不符合极性交替的要求.这时，需要将这个连0码元串的第1个0变成+B或-B.B的符号与前一个非0码元的符号相反；并且让后面的非0码元符号从V码元后再交替变化.<br>  1000  0 1  1  000  0 1<br>+1000  0-1+1 000  0-1<br>+1000+V-1+1 000+V-1 相邻两个V极性相同<br>+1000+V-1+1-B00-V+1<br>译码：<br>-发现相连的两个同符号的“1”时，后面的1及其前面的3个符号都译为0.<br>-然后，将“+1”和“-1”都译为1，其他为0.<br>  1000  0  1  1 000  0 000  00 1  1  1<br>+1000+V-1+1 000+V 000+V0-1+1-1<br>+1000+V-1+1-B00+V-B00-V0+1-1+1</p>
 
       
     </div>
